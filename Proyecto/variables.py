@@ -1,1 +1,2 @@
-ECHO est  activado.
+ancho = 800
+alto = 600
