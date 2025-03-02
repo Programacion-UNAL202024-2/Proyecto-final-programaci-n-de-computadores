@@ -10,16 +10,16 @@ def start():
 
 
     imagen1 = pygame.image.load(f"assets//fruticas//f_0{numero_1}.png")
-    primera_imagen = pygame.transform.scale(imagen1,(100,100))
+    primera_imagen = pygame.transform.scale(imagen1,(80,80))
 
     imagen2 = pygame.image.load(f"assets//fruticas//f_0{numero_2}.png")
-    segunda_imagen = pygame.transform.scale(imagen2,(100,100))
+    segunda_imagen = pygame.transform.scale(imagen2,(80,80))
 
     imagen3 = pygame.image.load(f"assets//fruticas//f_0{numero_3}.png")
-    tercera_imagen = pygame.transform.scale(imagen3,(100,100))
+    tercera_imagen = pygame.transform.scale(imagen3,(80,80))
 
     variables.screen.fill((255,255,255))
-    variables.screen.blit(primera_imagen,(150,150))
-    variables.screen.blit(segunda_imagen,(310,150))
-    variables.screen.blit(tercera_imagen,(470,150))
+    variables.screen.blit(primera_imagen,(240,200))
+    variables.screen.blit(segunda_imagen,(360,200))
+    variables.screen.blit(tercera_imagen,(460,200))
 

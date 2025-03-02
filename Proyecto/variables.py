@@ -6,5 +6,4 @@ alto = 600
 
 screen = pygame.display.set_mode((ancho, alto))
 
-#defino la imagen como un objeto
 
