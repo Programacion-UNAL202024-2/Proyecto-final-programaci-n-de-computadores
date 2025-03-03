@@ -11,4 +11,6 @@ for i in range(9):
     new = pygame.transform.scale(default,(80,80))
     frutas.append(new)
 
-
+sprite_default = pygame.image.load("Proyecto//assets//maquina1.png")
+frame = sprite_default.subsurface(0,0,850,1080)
+frame_1 = pygame.transform.scale(frame, (750,600))
