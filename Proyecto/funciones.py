@@ -5,7 +5,7 @@ import random
 
 def show_animation(cuanto):
     for i in range (cuanto):
-        pygame.time.delay(200)
+        pygame.time.delay(400)
         try:
             variables.screen.fill((255,255,255))
             variables.screen.blit(variables.frutas[i],(240,200))
@@ -15,7 +15,7 @@ def show_animation(cuanto):
             variables.screen.fill((255,255,255))
             variables.screen.blit(variables.frutas[i],(240,200))
             variables.screen.blit(variables.frutas[i-2],(360,200))
-            variables.screen.blit(variables.frutas[i-1],(460,200))
+            variables.screen.blit(variables.frutas[i-3],(460,200))
 
         pygame.display.flip()
 
