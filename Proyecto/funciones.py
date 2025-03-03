@@ -15,14 +15,14 @@ def show_animation(cuanto):
             variables.screen.fill((255,255,255))
             variables.screen.blit(variables.frutas[i],(240,200))
             variables.screen.blit(variables.frutas[i-2],(360,200))
-            variables.screen.blit(variables.frutas[i-3],(460,200))
+            variables.screen.blit(variables.frutas[i-1],(460,200))
 
         pygame.display.flip()
 
 def start():
-    numero_1 = random.randint(0,7)
-    numero_2 = random.randint(0,7)
-    numero_3 = random.randint(0,7)
+    numero_1 = random.randint(0,8)
+    numero_2 = random.randint(0,8)
+    numero_3 = random.randint(0,8)
 
     variables.screen.fill((255,255,255))
     variables.screen.blit(variables.frutas[numero_1],(240,200))
