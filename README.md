@@ -8,5 +8,5 @@
 # Integrantes del Grupo 🎰🎲♠
 	Los miembros del grupo pertenecen al pregrado de Estadística
 	- Francisco Molina Guarnizo
-	- Juan Sebastián Castañeda Montenegro
+	- Juan Sebastian Castañeda Montenegro
 	- Melissa Chaves Beltrán
