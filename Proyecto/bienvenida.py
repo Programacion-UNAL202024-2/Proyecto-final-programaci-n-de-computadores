@@ -3,9 +3,9 @@ import variables
 
 def mostrar_pantalla_inicio():
     pygame.init()
-    pantalla = variables.pantalla
+    pantalla = variables.screen
     fuente = pygame.font.Font(None, 36)
-    fondo = pygame.image.load("Proyecto//assets//fondo1.jpg")  
+    fondo = pygame.image.load("Proyecto//assets//fondo1.png")  
     fondo = pygame.transform.scale(fondo, (variables.ancho, variables.alto))  
     caja_texto = pygame.Rect(300, 250, 200, 32)
     color_inactivo = pygame.Color('lightskyblue3')

@@ -57,11 +57,15 @@ def calcular_puntaje(fruta1, fruta2, fruta3):
     return 0  
    
 
-def start(n):
+def start(n, apuesta ):
     show_animation(n)
     numero_1 = random.randint(0,8)
     numero_2 = random.randint(0,8)
     numero_3 = random.randint(0,8)
+
+    probabilidad_jackpot = min(apuesta / 100000, 1.0)
+    if random.random() < probabilidad_jackpot:
+        numero_1 = numero_2 = numero_3 = 7  
 
     variables.screen.fill((255,255,255))
     animacion_maquina() 
