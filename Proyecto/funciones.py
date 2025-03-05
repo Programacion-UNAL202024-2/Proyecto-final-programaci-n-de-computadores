@@ -63,9 +63,9 @@ def start(n, apuesta ):
     numero_2 = random.randint(0,8)
     numero_3 = random.randint(0,8)
 
-    probabilidad_jackpot = min(apuesta / 100000, 1.0)
+    probabilidad_jackpot = min(apuesta / 50000, 1.0)
     if random.random() < probabilidad_jackpot:
-        numero_1 = numero_2 = numero_3 = 7  
+        numero_1 = numero_2 = numero_3 = 7 
 
     variables.screen.fill((255,255,255))
     animacion_maquina() 

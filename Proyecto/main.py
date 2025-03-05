@@ -8,6 +8,7 @@ pygame.display.set_caption("Slot machine")
 puntaje_total = 0
 capital = 30000
 clock = pygame.time.Clock()
+ganancia = 0
 run = True
 apuesta = mostrar_pantalla_inicio()
 
@@ -35,8 +36,16 @@ while run == True:
                     print(f"Error en el proceso de inicio: {error}")
                     ejecutando = False
  
+    variables.screen.fill((30, 30, 30)) 
+    fuente = pygame.font.Font(None, 36)
+    texto_puntaje = fuente.render(f"Puntaje: {puntaje_total}", True, (255, 255, 255))
+    texto_ganancia = fuente.render(f"Ganancia: {ganancia}", True, (255, 255, 255))
+    texto_capital = fuente.render(f"Capital: {capital}", True, (255, 255, 255))
+    variables.screen.blit(texto_puntaje, (10, 10))
+    variables.screen.blit(texto_ganancia, (10, 50))
+
     pygame.display.update()  
-    clock.tick(30) 
+    clock.tick(30)  
 pygame.quit()
 
 
