@@ -14,4 +14,3 @@ for i in range(9):
 sprite_default = pygame.image.load("Proyecto//assets//maquina1.png")
 frame_maquina = sprite_default.subsurface(0,0,850,1080)
 frame_maquina_escalado = pygame.transform.scale(frame_maquina, (750,600))
-
