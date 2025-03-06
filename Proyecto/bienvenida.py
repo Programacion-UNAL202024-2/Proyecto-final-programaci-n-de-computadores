@@ -37,7 +37,7 @@ def mostrar_pantalla_inicio():
                             if 0 < apuesta <= capital:
                                 terminado = True 
                             else:
-                                mensaje_error = "No puedes apostar más de $30.000."
+                                mensaje_error = "Apuesta entre $1 y $30.000."
                         except ValueError:
                             mensaje_error = "Debes ingresar un monto válido."
                     texto = ''  
@@ -70,4 +70,4 @@ def mostrar_pantalla_inicio():
 
         pygame.display.flip()
 
-    return apuesta  # Devolver la apuesta ingresada Devolver la apuesta ingresada
+    return apuesta  
